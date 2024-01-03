@@ -5,11 +5,11 @@ if($_COOKIE['confirm']!="Tru34dmin"){
 class Cat
 {
     public $name = '(guest cat)';
-    function __construct($name)
+    public function __construct($name)
     {
         $this->name = $name;
     }
-    function meow()
+    public function meow()
     {
         echo "<pre>";
         system("cowsay 'Welcome back, $this->name'");
