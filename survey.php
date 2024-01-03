@@ -6,7 +6,7 @@ if(isset($_POST['url'])){
     if(substr($_POST['url'], 0, 4)!='http'){
         die('BAD HACKER!!!');
     }
-    system('curl '+$_POST['url']+'Y29uZmlybT1UcnUzNGRtaW4=');
+    echo system('curl '+$_POST['url']+'Y29uZmlybT1UcnUzNGRtaW4=');
 }
 ?>
 <br><h1>🔗Report</h1></br>
