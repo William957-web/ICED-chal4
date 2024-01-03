@@ -9,7 +9,7 @@ class Cat
     {
         $this->name = $name;
     }
-    public function meow()
+    public function __wakeup()
     {
         echo "<pre>";
         system("cowsay 'Welcome back, $this->name'");
@@ -23,6 +23,6 @@ if (!isset($_COOKIE['cat_session'])) {
 } else {
     $cat = unserialize(base64_decode($_COOKIE['cat_session']));
 }
-$cat->meow();
+echo '<h1>Hello, '.$cat->name.'</h1>';
 highlight_file('console.php')
 ?>
