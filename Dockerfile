@@ -2,4 +2,4 @@ FROM dockerfiles/centos-lamp
 
 COPY . /var/www/html/
 RUN rm /var/www/html/Dockerfile
-RUN echo 'ICED{PT_4_bab13s_have_fUn!!!}' > /flag-$(xxd -l 6 -p /dev/urandom)
+RUN echo 'ICED{Seial1z4tion_Challenge_m000oooo!}' > /flag-$(xxd -l 6 -p /dev/urandom)
