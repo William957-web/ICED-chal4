@@ -12,7 +12,7 @@ class Cat
     function __wakeup()
     {
         echo "<pre>";
-        system("cowsay 'Welcome back, $this->name'");
+        system("python3 cowsay.py 'Welcome back, $this->name'");
         echo "</pre>";
     }
 }
