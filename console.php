@@ -2,10 +2,6 @@
 if($_COOKIE['confirm']!="Tru34dmin"){
     die('You are not admin');
 }
-?>
-<?php
-isset($_GET['source']) && die(!show_source(__FILE__));
-
 class Cat
 {
     public $name = '(guest cat)';
