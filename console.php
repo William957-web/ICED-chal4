@@ -28,5 +28,5 @@ if (!isset($_COOKIE['cat_session'])) {
     $cat = unserialize(base64_decode($_COOKIE['cat_session']));
 }
 highlight_file('console.php')
+echo('hello'.($cat->name));
 ?>
-<p>Hello, <?php $cat->name ?>.</p>
