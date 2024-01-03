@@ -23,6 +23,6 @@ if (!isset($_COOKIE['cat_session'])) {
 } else {
     $cat = unserialize(base64_decode($_COOKIE['cat_session']));
 }
-echo $cat;
+echo $cat->name;
 highlight_file('console.php')
 ?>
