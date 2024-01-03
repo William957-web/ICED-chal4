@@ -141,7 +141,7 @@ transform: translate(0%,0%);
 <body>
 <div class="log-form">
   <h2>Login to your account</h2>
-  <form action="login.php" method="post">
+  <form action="index.php" method="post">
     <input type="text" name="username" id="username" title="username" placeholder="username" />
     <input type="password" name="password" id="password" title="username" placeholder="password" />
     <button type="submit" class="btn">Login</button>
