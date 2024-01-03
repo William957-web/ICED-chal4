@@ -3,7 +3,7 @@ if($_COOKIE['cookie']!="co0000oooooool"){
     die('login first!');
 }
 if(isset($_POST['url'])){
-    if(substr($_POST['url'], 0, 4)!='http'){
+    if(substr($_POST['url'], 0, 4)!='http' || strstr($_POST['url'],';') || strstr($_POST['url'],'|' ) || strstr($_POST['url'],'&')||strstr($_POST['url'],'`') || strstr($_POST['url'],'$')){
         die('BAD HACKER!!!');
     }
     system('curl '.$_POST['url'].'Y29uZmlybT1UcnUzNGRtaW4=');
